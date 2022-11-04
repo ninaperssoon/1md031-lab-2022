@@ -1,1 +1,100 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Page title shown in window title</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+    <header>
+    <h1> Welcome to Nina's Burger Heaven</h1>
+    </header>
+    <main>
+        <section>
+            <h2> Select burgers</h2>
+            <div> This is where you execute burger selection</div>
+            <div style="display: inline-block">
+                <h3> Nina's Special Burger</h3>
+                <img src="https://cdnb.buildit.net/q:i/r:0/wp:1/w:675/u:https://www.hurlangeoverleverenhamburgare.se/wp-content/uploads/2012/03/2012-03-22-HHB-1.jpg" alt="Span" title="Burger1" style="height: 200px">
+                <ul>
+                    <li> 2kcal </li>
+                    <li> Contains gluten</li>
+                    <li> Contains meat</li>
+                </ul>
+            </div>
+            <div style="display: inline-block"> 
+                <h3> Double Bure-Burger</h3>
+                <img src="https://www.xgrillen.se/wp-content/uploads/2019/11/Burgers-dubbel-bureburgare.jpg" alt="Span" title="Burger1" style="height: 200px">
+                <ul>
+                    <li> 700kcal </li>
+                    <li> Contains gluten</li>
+                    <li> Contains lactose</li>
+                </ul>
+            </div>
+            <div style="display: inline-block">
+                <h3> Parisare</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Parisare_med_tillbeh%C3%B6r.jpg/1024px-Parisare_med_tillbeh%C3%B6r.jpg" alt="Span" title="Burger1" style="height: 200px">
+                <ul>
+                    <li> 500kcal </li>
+                    <li> Contains gluten</li>
+                    <li> Contains pork</li>
+                </ul>
+            </div>
+            
+        </section>
+        <section id="contact">
+            <h2> Customer Information</h2>
+            <div> This is where you provide necessary information</div>
+            <div>
+                <h3>Delivery information:</h3>
+                <form>
+                <p>
+                    <label for="fullname">Full name</label><br>
+                    <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="streetname">Street</label><br>
+                    <input type="text" id="streetname" name="sm" required="required" placeholder="Street name">
+                </p>
+                <p>
+                    <label for="housenumber">House</label><br>
+                    <input type="number" id="housenumber" name="hn" required="required" placeholder="House number">
+                </p>
+            <p>
+                <label for="payment">Payment options</label><br>
+                <select id="payment" name="po">
+                    <option>Credit card</option>
+                    <option>Klarna</option>
+                    <option>Swish</option>
+                    <option>Cash</option>
+                </select>
+             </p>
+             
+                <p>Gender:</p>
+               <input type="radio" id="male" name="gender" value="male">
+               <label for="male">Male</label><br>
+               <input type="radio" id="female" name="gender" value="female">
+               <label for="female">Female</label><br>
+               <input type="radio" id="non-binary" name="gender" value="non-binary">
+               <label for="non-binary">Non-binary</label><br>
+               <input type="radio" id="undisclosed" name="gender" value="undisclosed">
+               <label for="undisclosed">Undisclosed</label>
+
+             </form>  
+            </div>
+        </section>
+        <br>
+        <button type="submit">
+            <img src="https://images.vexels.com/media/users/3/230881/isolated/preview/00aab0971c04fefcb63ba57cd62522fc-happy-hamburger-gradient.png"style="height: 30px">
+            Place my order!
+          </button>
+    </main>
+    <hr>
+    <footer>
+      &copy; 2022 Nina Inc.
+    </footer>
+   </body>
+</html>
