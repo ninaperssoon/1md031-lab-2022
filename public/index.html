@@ -3,41 +3,46 @@
    <head>
        <title>Page title shown in window title</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
     <header>
-    <h1> Welcome to Nina's Burger Heaven</h1>
+        <img src="https://img.freepik.com/vector-premium/burger-seamless-pattern-background-vector-design_22159-34.jpg?w=2000" id="headerimage">
+        <h1 id="headline"> Welcome to Nina's Burger Heaven</h1>
     </header>
     <main>
-        <section>
+        <section id="burger">
             <h2> Select burgers</h2>
             <div> This is where you execute burger selection</div>
-            <div style="display: inline-block">
+            <div class="wrapper">
+            <div class="box a">              
                 <h3> Nina's Special Burger</h3>
                 <img src="https://cdnb.buildit.net/q:i/r:0/wp:1/w:675/u:https://www.hurlangeoverleverenhamburgare.se/wp-content/uploads/2012/03/2012-03-22-HHB-1.jpg" alt="Span" title="Burger1" style="height: 200px">
+          
                 <ul>
                     <li> 2kcal </li>
-                    <li> Contains gluten</li>
-                    <li> Contains meat</li>
+                    <li> Contains <span class="allergen">gluten</span></li>
+                    <li> Contains <span class="allergen">meat</span></li>
                 </ul>
             </div>
-            <div style="display: inline-block"> 
+            <div class="box b"> 
                 <h3> Double Bure-Burger</h3>
                 <img src="https://www.xgrillen.se/wp-content/uploads/2019/11/Burgers-dubbel-bureburgare.jpg" alt="Span" title="Burger1" style="height: 200px">
                 <ul>
                     <li> 700kcal </li>
-                    <li> Contains gluten</li>
-                    <li> Contains lactose</li>
+                    <li> Contains <span class="allergen">gluten</span></li>
+                    <li> Contains <span class="allergen">lactose</span></li>
                 </ul>
             </div>
-            <div style="display: inline-block">
+            <div class="box c">
                 <h3> Parisare</h3>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Parisare_med_tillbeh%C3%B6r.jpg/1024px-Parisare_med_tillbeh%C3%B6r.jpg" alt="Span" title="Burger1" style="height: 200px">
                 <ul>
                     <li> 500kcal </li>
-                    <li> Contains gluten</li>
-                    <li> Contains pork</li>
+                    <li> Contains <span class="allergen">gluten</span></li>
+                    <li> Contains <span class="allergen">pork</span></li>
                 </ul>
+            </div>
             </div>
             
         </section>
@@ -86,8 +91,7 @@
              </form>  
             </div>
         </section>
-        <br>
-        <button type="submit">
+        <button type="submit" class="pointer">
             <img src="https://images.vexels.com/media/users/3/230881/isolated/preview/00aab0971c04fefcb63ba57cd62522fc-happy-hamburger-gradient.png"style="height: 30px">
             Place my order!
           </button>
