@@ -1,8 +1,13 @@
+<!-- order.orderItems.join(", ") -->
 <template>
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }}: <span v-for="(amount, item) in order.orderItems"> {{amount }} {{item }}, </span>
+          <div id="personalInfo">
+            {{order.details.fullName}} ({{order.details.email}}, {{order.details.payment}}, {{order.details.gender}})
+          </div>
+
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
@@ -63,6 +68,10 @@
     width:20px;
     height:20px;
     text-align: center;
+  }
+  #personalInfo {
+    font-size: 17px;
+    font-style: italic;
   }
   </style>
   

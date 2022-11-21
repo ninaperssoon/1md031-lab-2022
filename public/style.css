@@ -39,7 +39,7 @@ body {
     color: white;
 }
 button:hover {
-    background-color: blue;
+    background-color: light;
  }
 .pointer {
     cursor: pointer;
