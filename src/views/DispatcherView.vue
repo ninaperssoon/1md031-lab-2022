@@ -3,7 +3,7 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: <span v-for="(amount, item) in order.orderItems"> {{amount }} {{item }}, </span>
+          #{{ key }}: <span v-for="(amount, item) in order.orderItems" v-bind:key="'amount'+item"> {{amount }} {{item }}, </span>
           <div id="personalInfo">
             {{order.details.fullName}} ({{order.details.email}}, {{order.details.payment}}, {{order.details.gender}})
           </div>
@@ -18,6 +18,7 @@
       </div>
     </div>
   </template>
+  
   <script>
   import io from 'socket.io-client'
   const socket = io();

@@ -83,6 +83,7 @@ io.on('connection', function (socket) {
     // send updated info to all connected clients, note the use of io instead of socket
     io.emit('currentQueue', { orders: data.getAllOrders() });
   });
+  
 
 });
 

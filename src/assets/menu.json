@@ -1,0 +1,23 @@
+[
+  {
+    "name" : "Nina's Special Burger",
+    "url" : "https://cdnb.buildit.net/q:i/r:0/wp:1/w:675/u:https://www.hurlangeoverleverenhamburgare.se/wp-content/uploads/2012/03/2012-03-22-HHB-1.jpg",
+    "kCal" : 2,
+    "gluten" : true,
+    "lactose" : false
+  },
+  {
+    "name" : "Double Bure-Burger",
+    "url" : "https://www.xgrillen.se/wp-content/uploads/2019/11/Burgers-dubbel-bureburgare.jpg",
+    "kCal" : 700,
+    "gluten" : true,
+    "lactose" : true
+  },
+  {
+    "name" : "Parisare",
+    "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Parisare_med_tillbeh%C3%B6r.jpg/1024px-Parisare_med_tillbeh%C3%B6r.jpg",
+    "kCal" : 500,
+    "gluten" : true,
+    "lactose" : false
+    }
+              ]

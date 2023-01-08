@@ -9,7 +9,7 @@
             <h2> Select burgers</h2>
             <div> This is where you execute burger selection</div>
               <div>
-              <div class="wrapper">
+    <div class="wrapper">
 
     <Burger v-for="burger in burgers" 
             v-bind:burger="burger" 
@@ -68,8 +68,8 @@
       </div>
     </div>
         </section>
-        <button type="submit" class="pointer" v-on:click="printOrder(key)">
-            <img src="https://images.vexels.com/media/users/3/230881/isolated/preview/00aab0971c04fefcb63ba57cd62522fc-happy-hamburger-gradient.png"style="height: 30px">
+        <button type="submit" class="pointer" v-on:click="printOrder()">
+            <img src="https://images.vexels.com/media/users/3/230881/isolated/preview/00aab0971c04fefcb63ba57cd62522fc-happy-hamburger-gradient.png" style="height: 30px">
             Place my order!
           </button>
     </main>
@@ -114,10 +114,10 @@ export default {
     return {
       orderedBurgers : {},
       burgers: menu,
-      fullName : null,
-      email : null,
-      gender : null,
-      payment : null,
+      fullName : "",
+      email : "",
+      gender : "",
+      payment : "",
       fn : null,
       em : null,
       po : null,
@@ -140,27 +140,20 @@ export default {
       
     },
     addOrder: function (event) {
-      var offset = {x: event.currentTarget.getBoundingClientRect().left,
-                    y: event.currentTarget.getBoundingClientRect().top};
       this.location = {
-        x: event.offsetX-30,
+        x: event.offset.x-30,
         y: event.offsetY-30
       }
     
     },
     setLocation: function (event) {
-      var offset = {x: event.currentTarget.getBoundingClientRect().left,
-                    y: event.currentTarget.getBoundingClientRect().top};
+  
       this.location = {
         x: event.offsetX-25,
         y: event.offsetY-25
       }
     },
-    printOrder: function(key) {
-      var fullName = this.fn;
-      var email = this.em;
-      var gender = this.gender;
-      var payment = this.po;
+    printOrder: function() {
       socket.emit("addOrder", { orderId: this.getOrderNumber(),
                                 details: { x: this.location.x,
                                            y: this.location.y,
